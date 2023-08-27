@@ -2,12 +2,14 @@
 
 *{padding: 0; margin: 0; box-sizing: border-box;}
 
+/*General Rules*/
+body{min-height: 100vh; display: flex; flex-direction: column; /*Generic project styles*/ color: #3a3a3a;}
 
 /* Header */
 header{background-color: lightcoral;}
 
 /* Main */
-main{background-color: lightblue;}
+main{background-color: lightblue;/*Make main to take any surplus space to push footer down*/ flex: 1 0 auto;}
 
 /* Footer */
 footer{background-color: orange;}
