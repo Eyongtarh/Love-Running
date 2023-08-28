@@ -120,4 +120,21 @@ footer {
         display: none;
     }
 
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    main {
+        /*Push content down to accommodate larger header */
+        margin-top: 79px;
+    }
+
 }
+  /* Media Queries: laptops and desktops  (992px and up) */
+  @media screen and (min-width: 992px) {
+
+      /* Header */
+      #menu a:hover{border-bottom: 1 solid #3a3a3a;}
+      }
