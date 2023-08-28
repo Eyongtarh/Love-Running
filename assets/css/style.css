@@ -15,44 +15,109 @@ body {
     display: flex;
     flex-direction: column;
     /*Generic project styles*/
-    color: #3a3a3a; font-family: 'lato', sans-serif; 
+    color: #3a3a3a;
+    font-family: 'lato', sans-serif;
 }
 
 /* Header */
 header {
-    background-color: #ffffff; padding: 0 1rem; position: fixed; z-index: 99; 
-    width: 100%; box-shadow: 0 2px 2px #3a3a3a; display: flex;
-     justify-content: space-between; align-items: baseline; 
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
-header a{text-decoration: none; color: inherit;}
+header a {
+    text-decoration: none;
+    color: inherit;
+}
 
-h1{font-family: 'oswald', sans-serif; text-transform: uppercase; 
-    letter-spacing: 2px; color: #252525;}
+h1 {
+    font-family: 'oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
 
-#menu{letter-spacing: 4px; font-size: 110%; list-style-type: none;}
+#menu {
+    letter-spacing: 4px;
+    font-size: 110%;
+    list-style-type: none;
+}
 
-#menu > li{margin-bottom: 1em;}
+#menu>li {
+    margin-bottom: 1em;
+}
 
-.active{border-bottom: 1px solid #3a3a3a}
+.active {
+    border-bottom: 1px solid #3a3a3a
+}
 
 /* navbar styles with dropxown toggle */
-nav{position: absolute; background-color: #ffffff; width: 100%; 
-left: 0; padding: 0 1rem; box-shadow: 0 2px 2px #3a3a3a; display: none;
- top: 100%;}
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
 
 /* nave-toggle */
-#nav-toggle:checked~nav{display: block}
-#nav-toggle{display: none;}
-.nav-toggle-label{font-size: 2rem; }
+#nav-toggle:checked~nav {
+    display: block
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
 /* Main */
 main {
     background-color: lightblue;
     /*Make main to take any surplus space to push footer down*/
-    flex: 1 0 auto; margin-top: 47px;
+    flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 /* Footer */
 footer {
     background-color: orange;
+}
+
+/* Media Queries: Tablets and Laber (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
 }
