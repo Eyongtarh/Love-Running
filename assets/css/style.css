@@ -85,19 +85,32 @@ nav {
 
 /* Main */
 main {
-    background-color: lightblue;
     /*Make main to take any surplus space to push footer down*/
     flex: 1 0 auto;
     margin-top: 47px;
 }
 
+/* Hero section styles */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover ;
+}
+
 /* Footer */
-#social-networks {text-align: center;
-    padding: 20px 0; display: flex; justify-content: space-evenly; 
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
     list-style-type: none;
 }
 
-#social-networks i {font-size: 160%; padding: 5%; color: #3a3a3a;}
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
 
 /* Media Queries: Tablets and Laber (768px and up) */
 @media screen and (min-width: 768px) {
@@ -135,9 +148,12 @@ main {
     }
 
 }
-  /* Media Queries: laptops and desktops  (992px and up) */
-  @media screen and (min-width: 992px) {
 
-      /* Header */
-      #menu a:hover{border-bottom: 1px solid #3a3a3a;}
-      }
+/* Media Queries: laptops and desktops  (992px and up) */
+@media screen and (min-width: 992px) {
+
+    /* Header */
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+}
