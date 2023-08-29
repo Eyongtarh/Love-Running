@@ -176,6 +176,7 @@ hr {
     justify-content: center;
 }
 
+
 /* Media Queries: Tablets and Laber (768px and up) */
 @media screen and (min-width: 768px) {
 
@@ -218,11 +219,58 @@ hr {
     }
 }
 
+#benefit-physical,
+#benefits-mental {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#benefit-physical>div,
+#benefits-mental>div {
+    width: 75%;
+}
+
+#benefits-mental>div {
+    text-align: end;
+    align-self: flex-end;
+}
+
 /* Media Queries: laptops and desktops  (992px and up) */
 @media screen and (min-width: 992px) {
 
     /* Header */
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+}
+
+/* Media Queries: laptops and desktops  (1200px and up) */
+@media screen and (min-width: 1200px) {
+
+    /* Reasons section */
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #benefits>div {
+        flex: 1;
+    }
+
+    #benefits-image {
+        order: 0;
+    }
+
+    #benefits-mental {
+        order: 1;
+    }
+
+    #benefits-mental>div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical>div {
+        align-self: flex-end;
     }
 }
