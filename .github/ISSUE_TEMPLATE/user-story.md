@@ -2,8 +2,8 @@
 name: User story
 about: Designed to get people together and encourage each other to run.
 title: User story
-labels: ''
-assignees: ''
+labels:
+assignees: Eyongtarh
 
 ---
 
